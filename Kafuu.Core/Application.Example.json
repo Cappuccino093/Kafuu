@@ -1,0 +1,13 @@
+﻿{
+  "General": {
+    "ApplicationId": "APPLICATION_ID",
+    "PublicKey": "PUBLIC_KEY"
+  },
+  "OAuth2": {
+    "ClientId": "CLIENT_ID",
+    "ClientSecret": "CLIENT_SECRET"
+  },
+  "Bot": {
+    "Token": "TOKEN"
+  }
+}

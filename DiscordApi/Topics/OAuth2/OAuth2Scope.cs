@@ -1,0 +1,30 @@
+﻿namespace DiscordApi.Topics.OAuth2
+{
+    [JsonConverter(typeof(DotCaseNamingPolicyJsonStringEnumConverter))]
+    public enum OAuth2Scope
+    {
+        ActivitiesRead,
+        ActivitiesWrite,
+        ApplicationsBuildsRead,
+        ApplicationsBuildsUpload,
+        ApplicationsCommands,
+        ApplicationsCommandsUpdate,
+        ApplicationsEntitlements,
+        ApplicationsStoreUpdate,
+        Bot,
+        Connections,
+        Email,
+        GdmJoin,
+        Guilds,
+        GuildsJoin,
+        Identify,
+        MessagesRead,
+        RelationshipsRead,
+        Rpc,
+        RpcActivitiesWrite,
+        RpcNotificationsRead,
+        RpcVoiceRead,
+        RpcVoiceWrite,
+        WebhookIncoming
+    }
+}

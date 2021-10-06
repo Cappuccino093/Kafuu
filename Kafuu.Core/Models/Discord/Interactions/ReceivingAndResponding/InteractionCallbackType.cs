@@ -3,7 +3,7 @@
 public enum InteractionCallbackType
 {
 	Pong = 1,
-	ChannelMessageWithSource,
+	ChannelMessageWithSource = 4,
 	DeferredChannelMessageWithSource,
 	DeferredUpdateMessage,
 	UpdateMessage

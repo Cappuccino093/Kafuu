@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Kafū/Kafū.csproj",
+                "${workspaceFolder}/Kafuu.Console/Kafuu.Console.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Kafū/Kafū.csproj",
+                "${workspaceFolder}/KaKafuu.Consolefuu/Kafuu.Console.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,11 +32,49 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Kafū/Kafū.csproj",
+                "${workspaceFolder}/Kafuu.Console/Kafuu.Console.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "type": "func",
+            "command": "host start",
+            "problemMatcher": "$func-node-watch",
+            "isBackground": true,
+            "dependsOn": "npm build (functions)",
+            "options": {
+                "cwd": "${workspaceFolder}/Kafuu.Functions\\Kafuu.Functions.TypeScript"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "npm build (functions)",
+            "command": "npm run build",
+            "dependsOn": "npm install (functions)",
+            "problemMatcher": "$tsc",
+            "options": {
+                "cwd": "${workspaceFolder}/Kafuu.Functions\\Kafuu.Functions.TypeScript"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "npm install (functions)",
+            "command": "npm install",
+            "options": {
+                "cwd": "${workspaceFolder}/Kafuu.Functions\\Kafuu.Functions.TypeScript"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "npm prune (functions)",
+            "command": "npm prune --production",
+            "dependsOn": "npm build (functions)",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}/Kafuu.Functions\\Kafuu.Functions.TypeScript"
+            }
         }
     ]
 }

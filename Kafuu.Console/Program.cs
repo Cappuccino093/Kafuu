@@ -1,8 +1,12 @@
-﻿global using System;
+﻿using Kafuu.Console.Menu;
 
-namespace Kafuu.Console;
+Menu.Start();
 
-class Program
+namespace Kafuu.Console
 {
+	internal class Program
+	{
 
+	}
 }
+

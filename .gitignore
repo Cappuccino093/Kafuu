@@ -1,6 +1,4 @@
-﻿Kafuu.Core/Application.json
-
-# --- Visual Studio Git Ignore https://github.com/github/gitignore/blob/master/VisualStudio.gitignore ---
+﻿# --- Visual Studio Git Ignore https://github.com/github/gitignore/blob/master/VisualStudio.gitignore ---
 *.rsuser
 *.suo
 *.user
@@ -211,4 +209,7 @@ FodyWeavers.xsd
 *.msp
 .idea/
 *.sln.iml
+
+# --- Kafuu ---
 Kafuu.Core/Application.json
+!Kafuu.Console/Log/

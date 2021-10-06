@@ -1,4 +1,0 @@
-﻿[*.cs]
-
-# IDE0021: Usar cuerpo del bloque para los constructores
-dotnet_diagnostic.IDE0021.severity = silent
